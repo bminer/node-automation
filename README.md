@@ -8,7 +8,7 @@ Features:
 
 - Easily build your own home automation server
 - Modular design allows one to support *any* device
-- Built-in plugins to support a few basic devices (see below)
+- [Built-in support for a few basic devices](#built-in-devices)
 
 Install:
 --------
@@ -43,6 +43,15 @@ not respond to commands, but rather, it would have the ability to respond to
 state queries. Or, perhaps, the sensor would emit temperature information once
 every 200 milliseconds. A more sophisticated temperature sensor might also
 have the ability to receive commands that configure it.
+
+### Sub-devices
+
+The purpose of some devices is to bridge communication between other
+"sub-devices." For example, the X10 CM11A is a device that attaches to a
+computer's RS-232 serial port and allows the computer to interface with other
+X10 devices over the power line (like appliance modules or lamp modules). When
+"bridging" devices like the CM11A are used, it is possible to use the
+sub-devices associated with that particular device.
 
 ### Autumn8 Programming Language
 
